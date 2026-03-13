@@ -8,6 +8,7 @@ return {
       "lua_ls",
       "nixd",
       "ruff",
+      "rust_analyzer",
       "ty",
       "yamlls",
     })

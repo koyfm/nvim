@@ -16,13 +16,14 @@ return {
   ---@type conform.setupOpts
   opts = {
     formatters_by_ft = {
-      typescript = { "prettierd", "prettier", stop_after_first = true },
-      typescriptreact = { "prettierd", "prettier", stop_after_first = true },
       javascript = { "prettierd", "prettier", stop_after_first = true },
       javascriptreact = { "prettierd", "prettier", stop_after_first = true },
       lua = { "stylua" },
       nix = { "nixfmt" },
       python = { "ruff_fix", "ruff_format", "ruff_organize_imports" },
+      rust = { "rustfmt" },
+      typescript = { "prettierd", "prettier", stop_after_first = true },
+      typescriptreact = { "prettierd", "prettier", stop_after_first = true },
     },
     default_format_opts = {
       lsp_format = "fallback",
