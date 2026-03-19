@@ -8,6 +8,9 @@ return {
         vim.keymap.set(mode, l, r, { buffer = bufnr, desc = desc })
       end
 
+      map("n", "]h", gitsigns.next_hunk, "Next Git hunk")
+      map("n", "[h", gitsigns.prev_hunk, "Previous Git hunk")
+
       map("n", "<leader>gs", gitsigns.stage_hunk, "Stage Git hunk")
       map("n", "<leader>gr", gitsigns.reset_hunk, "Reset Git hunk")
       map("n", "<leader>gS", gitsigns.stage_buffer, "Stage Git buffer")
